@@ -5,14 +5,14 @@ const Layout = props => {
   return <div>
              <p> CARD DETAILS</p>
            {
-              props.cardData.map((cardData, index) => {
+              props.cardData.map((cardDatas, index) => {
                   return (
                       <div>
-                        <p>{cardData.cardId}.</p>
+                        <p>{cardDatas.cardId}.</p>
                         <button onClick={() => props.handleCardDetails(index)}>
-                        <h2> <u>{cardData.cardname.toUpperCase()}</u></h2> 
-                        <img src={cardData.image} width="300" height="200" alt={cardData.cardname} /></button>
-                        <p>{cardData.description}</p> 
+                        <h2> <u>{cardDatas.cardname.toUpperCase()}</u></h2> 
+                        <img src={cardDatas.image} width="300" height="200" alt={cardDatas.cardname} /></button>
+                        <p>{cardDatas.description}</p> 
                         <CardFunctions />
                       </div>
                           )

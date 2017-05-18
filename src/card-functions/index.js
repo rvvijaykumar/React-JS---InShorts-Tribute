@@ -32,7 +32,7 @@ onDisLike() {
     return (
       <div>
         <button onClick={this.onLike}> <span>{this.state.like ? 'LIKED': 'LIKE'}</span> </button> &nbsp;
-        <button onClick={this.onDisLike}> <span>{this.state.dislike ? 'DISLIKED': 'DISLIKE'}</span> </button>
+        <button onClick={this.onDisLike} disabled={this.state.like}> <span>{this.state.dislike ? 'DISLIKED': 'DISLIKE'}</span> </button>
       </div>
     );
   }
