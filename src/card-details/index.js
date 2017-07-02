@@ -13,7 +13,7 @@ const CradDetilas = props => {
      <h3> CARD DETAILS of {cardname}</h3>
       <img src={image} width="300" height="200" alt={cardname}/>
       <p value={description} maxLength={40}>{description}</p>
-      <span dangerouslySetInnerHTML={{__html: fulldescription}} /> <br/>
+      <span maxLength={40} dangerouslySetInnerHTML={{__html: fulldescription}} /> <br/>
 
       <CardFunctions /> <br/><br/>
       <a href={link} target="_blank"> Click for More Info </a> <br/><br/>
